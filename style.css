@@ -169,3 +169,31 @@
     font-size: 14px;
   }
   
+  @media (min-width: 700px) {
+    :root {
+      --bg-url: url(./assets/bg-desktop.jpg);
+    }
+  
+    .light {
+      --bg-url: url(./assets/bg-desktop-light.jpg);
+    }
+  }
+  
+  /* animation */
+  @keyframes slide-in {
+    from {
+      left: 0;
+    }
+    to {
+      left: 50%;
+    }
+  }
+  
+  @keyframes slide-back {
+    from {
+      left: 50%;
+    }
+    to {
+      left: 0;
+    }
+  }
