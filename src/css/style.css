@@ -6,26 +6,27 @@
 
 :root {
   --text-color: white;
-  --bg-url: url(./Image/Background.png);
+  --bg-url: url(../Image/Background.png);
   --stroke-color: rgba(255, 255, 255, 0.5);
   --surface-color: rgba(255, 255, 255, 0.5);
   --surface-color-hover: rgba(255, 255, 255, 0.02);
   --highlight-color: rgba(0, 0, 0, 0.02);
-  --switch-bg-url: url(./image/moon-stars.svg);
+  --switch-bg-url: url(../Image/moon-stars.svg);
 }
 
 .light {
   --text-color: black;
-  --bg-url: url(./image/Background-light.png);
+  --bg-url: url(../Image/Background-light.png);
   --stroke-color: rgba(0, 0, 0, 0.5);
   --surface-color: rgba(0, 0, 0, 0.05);
   --surface-color-hover: rgba(0, 0, 0, 0.02);
   --highlight-color: rgba(0, 0, 0, 0.1);
-  --switch-bg-url: url(./image/sun.svg);
+  --switch-bg-url: url(../Image/sun.svg);
 }
 
 body {
   background: var(--bg-url) no-repeat top center/cover;
+  min-height: 100vh;
 }
 
 body * {
@@ -89,7 +90,7 @@ body * {
   background: var(--surface-color-hover);
   border: 1px solid var(--stroke-color);
   backdrop-filter: blur(4px);
-  -webkit-backdrop-filter: blur(4%);
+  -webkit-backdrop-filter: blur(4px);
   border-radius: 9999px;
 }
 
@@ -111,7 +112,7 @@ ul li a {
   padding: 16px 24px;
 
   background: var(--surface-color);
-  border: 1px solid var(--strok-color);
+  border: 1px solid var(--stroke-color);
   border-radius: 8px;
 
   backdrop-filter: blur(4px);
@@ -120,12 +121,19 @@ ul li a {
   text-decoration: none;
   font-weight: 500;
 
-  transition: background 0.2s;
+  transition: background 0.2s, border-color 0.2s;
 }
 
 ul li a:hover {
   background: rgba(255, 255, 255, 0.05);
-  border: 1.5px solid var(--text-color);
+  border: 1px solid var(--text-color);
+}
+
+ul li a:focus-visible,
+#social-links a:focus-visible,
+#switch button:focus-visible {
+  outline: 2px solid var(--text-color);
+  outline-offset: 4px;
 }
 
 #social-links {

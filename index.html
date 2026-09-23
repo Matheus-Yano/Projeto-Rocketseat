@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br" class="light">
+<html lang="pt-BR" class="light">
   <head>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,51 +12,50 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Matheus Yano</title>
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./src/css/style.css" />
   </head>
   <body>
     <div id="container">
       <div id="profile">
-        <img src="./Image/avatar-dark.png" alt="Imagem de perfil" />
+        <img src="./src/Image/avatar-light.png" alt="Imagem de perfil de Matheus Yano" />
         <p>@matheus_yano_</p>
       </div>
 
-      <div id="switch" onclick="toggleMode()">
-        <button>
-        </button>
-        <span>
-
-        </span>
+      <div id="switch">
+        <button type="button" aria-label="Ativar modo escuro" aria-pressed="false"></button>
+        <span aria-hidden="true"></span>
       </div>
       <ul>
         <li>
           <a
             href="https://www.linkedin.com/in/matheus-yano-260700128/"
             target="_blank"
+            rel="noopener noreferrer"
             >Linkedin</a
           >
         </li>
 
         <li>
-          <a href="https://github.com/Matheus-Yano" target="_blank">GitHub</a>
+          <a href="https://github.com/Matheus-Yano" target="_blank" rel="noopener noreferrer">GitHub</a>
         </li>
 
         <li>
-          <a href="https://www.facebook.com/matheusyano368/" target="_blank"
+          <a href="https://www.facebook.com/matheusyano368/" target="_blank" rel="noopener noreferrer"
             >Facebook</a
           >
         </li>
       </ul>
       <div id="social-links">
-        <a href="https://github.com/Matheus-Yano" target="_blank">
+        <a href="https://github.com/Matheus-Yano" target="_blank" rel="noopener noreferrer">
           <ion-icon name="logo-github"></ion-icon>
         </a>
-        <a href="https://www.instagram.com/matheus_yano_/" target="_blank">
+        <a href="https://www.instagram.com/matheus_yano_/" target="_blank" rel="noopener noreferrer">
           <ion-icon name="logo-instagram"></ion-icon>
         </a>
         <a
           href="https://www.youtube.com/channel/UChdpp18A80r5QUOL2Kj0Sww"
           target="_blank"
+          rel="noopener noreferrer"
         >
           <ion-icon name="logo-youtube"></ion-icon>
         </a>
@@ -76,6 +75,6 @@
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
 
-    <script src="./script.js"></script>
+    <script src="./src/js/script.js"></script>
   </body>
 </html>
